@@ -23,10 +23,10 @@ spring:
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: localhost
+    hostname: host.docker.internal
 
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:3150/eureka/
+      defaultZone: http://host.docker.internal:3150/eureka/
